@@ -17,4 +17,7 @@
     <dimen name="avatar_margin_top">90dp</dimen>
     <dimen name="detail_background_height">120dp</dimen>
     <dimen name="button_width">100dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

@@ -1,6 +1,7 @@
 package com.clayons.interviewquestions;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -116,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(MyViewHolder holder, int position) {
-            Person item = this.items.get(position);
+        public void onBindViewHolder(final MyViewHolder holder, int position) {
+            final Person item = this.items.get(position);
             holder.ivAvatarPerson.setImageResource(R.drawable.ic_action_account_circle_40);
             holder.name.setText(item.getFirstName() + " " + item.getLastName());
 
@@ -126,12 +127,40 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 holder.ivIsLiked.setImageResource(R.drawable.ic_heart_outline);
             }
+
+            holder.ivIsLiked.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(item.isLiked()) {
+                        item.setLiked(false);
+                        holder.ivIsLiked.setImageResource(R.drawable.ic_heart_outline);
+                    } else {
+                        item.setLiked(true);
+                        holder.ivIsLiked.setImageResource(R.drawable.ic_heart_filled);
+                    }
+                }
+            });
+
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    context.startActivity(getDetailIntent(item));
+                }
+            });
         }
 
         @Override
         public int getItemCount() {
             return this.items.size();
         }
+
+        private Intent getDetailIntent(Person person) {
+            Intent intent = new Intent(this.context, DetailActivity.class);
+            intent.putExtra(Constants.BUNDLE_KEY_PERSON, person);
+            return intent;
+        }
+
     }
+
 
 }

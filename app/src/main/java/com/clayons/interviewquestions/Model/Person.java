@@ -1,9 +1,8 @@
 package com.clayons.interviewquestions.Model;
 
-/**
- * Created by jaychung on 11/16/15.
- */
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable{
 
     private String firstName;
     private String lastName;
