@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_margin"
+    app:cardCornerRadius="@dimen/small_corner_radius"
+    app:cardElevation="@dimen/normal_elevation"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding">
+
+        <ImageView
+            android:id="@+id/ivAvatarPerson"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/tiny_margin"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivAvatarPerson"
+            tools:text="John"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/ivIsLiked"
+            android:layout_width="@dimen/like_size"
+            android:layout_height="@dimen/like_size"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_margin" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

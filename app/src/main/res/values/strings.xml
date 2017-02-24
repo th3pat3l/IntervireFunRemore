@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InterviewQuestions</string>
+    <string name="liked">Liked</string>
+    <string name="like">Like</string>
+    <string name="name_label">Name</string>
+    <string name="age_label">Age</string>
+    <string name="phone_label">Phone</string>
+    <string name="persons_label">Persons</string>
+</resources>

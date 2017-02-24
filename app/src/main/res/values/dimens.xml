@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="firstname_text_height">32dp</dimen>
+    <dimen name="lastname_text_height">32dp</dimen>
+    <dimen name="age_text_height">32dp</dimen>
+    <dimen name="phonenum_text_height">32dp</dimen>
+    <dimen name="image_dimen">60dp</dimen>
+    <dimen name="avatar_size">50dp</dimen>
+    <dimen name="normal_margin">12dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="like_size">20dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="small_corner_radius">4dp</dimen>
+    <dimen name="tiny_margin">4dp</dimen>
+    <dimen name="normal_elevation">8dp</dimen>
+    <dimen name="large_margin">20dp</dimen>
+    <dimen name="avatar_margin_top">90dp</dimen>
+    <dimen name="detail_background_height">120dp</dimen>
+    <dimen name="button_width">100dp</dimen>
+</resources>
