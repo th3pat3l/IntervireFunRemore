@@ -1,4 +1,4 @@
-package com.clayons.interviewquestions;
+package com.clayons.interviewquestions.unusedClasses;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.clayons.interviewquestions.Model.Person;
+import com.clayons.interviewquestions.Constants;
+import com.clayons.interviewquestions.R;
 
 import java.util.ArrayList;
 

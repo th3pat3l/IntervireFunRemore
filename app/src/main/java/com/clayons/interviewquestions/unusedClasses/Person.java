@@ -1,8 +1,9 @@
-package com.clayons.interviewquestions.Model;
+package com.clayons.interviewquestions.unusedClasses;
 
 import java.io.Serializable;
 
-public class Person implements Serializable{
+@SuppressWarnings({"UnusedDeclaration"})
+public class Person implements Serializable {
 
     private String firstName;
     private String lastName;

@@ -1,4 +1,4 @@
-package com.clayons.interviewquestions;
+package com.clayons.interviewquestions.unusedClasses;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.clayons.interviewquestions.Model.Person;
+import com.clayons.interviewquestions.Constants;
+import com.clayons.interviewquestions.R;
 
 public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
 
